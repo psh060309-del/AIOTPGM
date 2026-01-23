@@ -1,2 +1,2 @@
-# AIOTPRM
+# AIOTPGM
 AIOT 프로그래밍
