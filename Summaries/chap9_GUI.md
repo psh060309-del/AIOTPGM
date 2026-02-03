@@ -153,11 +153,12 @@ name.set("Kim")   # 값 설정하기
 * `entry.get()`을 매번 호출하지 않아도 됨
 * GUI 상태 관리가 쉬워짐
 
-````
+``
 
 ---
 
 ## 🔟 이벤트 바인딩 (bind)
+
 마우스 클릭, 키보드 입력 같은 **사용자 행동(이벤트)**을 감지하는 방법입니다.
 
 ```python
@@ -165,7 +166,7 @@ def key_event(event):
     print(event.char)
 
 window.bind("<Key>", key_event)
-````
+```
 
 📌 설명
 
@@ -179,11 +180,12 @@ window.bind("<Key>", key_event)
 
 window.bind("<Key>", key_event)
 
-````
+``
 
 ---
 
 ## 1️⃣1️⃣ 프레임 (Frame)
+
 프레임은 **위젯들을 묶는 상자(컨테이너)**입니다.
 
 - GUI 구조를 깔끔하게 나눌 때 사용
@@ -192,18 +194,19 @@ window.bind("<Key>", key_event)
 ```python
 frame = tk.Frame(window)
 frame.pack()
-````
+```
 
 📌 언제 쓰나?
 
 * 영역별로 버튼 / 입력창을 구분하고 싶을 때
 * 복잡한 GUI에서 필수
 
-````
+``
 
 ---
 
 ## 1️⃣2️⃣ GUI 프로그래밍 필수 패턴 (클래스 기반)
+
 GUI를 **클래스로 설계하는 방식**으로, 과제·실무에서 가장 많이 사용됩니다.
 
 ```python
@@ -221,16 +224,8 @@ class App:
 root = tk.Tk()
 app = App(root)
 root.mainloop()
-````
-
-📌 핵심 포인트
-
-* `__init__` : 위젯 생성
-* 메소드 : 이벤트 처리
-* `self` : 위젯을 클래스 안에서 공유
-
-👉 **Chap 8 클래스 개념이 여기서 바로 쓰임**
-
 ```
+
+
 
 
